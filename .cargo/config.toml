@@ -2,7 +2,7 @@
 target = "avr-atmega328pb.json"
 
 [target.'cfg(target_arch = "avr")']
-runner = "./leonardo-runner.sh"
+runner = "./arduino-runner.sh"
 
 [unstable]
 build-std = ["core"]

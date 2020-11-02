@@ -28,4 +28,4 @@ read -r
 printf "Attempting to flash ...\n"
 printf "\n"
 
-avrdude -qq -C/etc/avrdude.conf -patmega328p -cavr109 -P/dev/ttyACM0 -b57600 -D "-Uflash:w:$1:e"
+avrdude -qq -Cavrdude.conf -F -patmega328pb -carduino -P/dev/ttyUSB0 -b57600 -D "-Uflash:w:$1:e"

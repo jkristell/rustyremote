@@ -41,21 +41,19 @@
 
 #![no_std]
 
-pub extern crate atmega328pb_hal as hal;
+pub extern crate atmega328p_hal as hal;
+pub use atmega328p_hal::pac;
+
 #[cfg(feature = "rt")]
 pub use hal::entry;
 
-pub use atmega328pb_hal::atmega328pb as pac;
+pub use crate::pins::*;
+pub use crate::pac::Peripherals;
+pub use hal::prelude;
 
 mod pins;
-pub use crate::pins::*;
+pub mod keyboard;
 
-pub use atmega328pb_hal::atmega328pb;
-pub use crate::atmega328pb::Peripherals;
-pub use atmega328pb_hal::prelude;
-
-
-/*
 /// Busy-Delay
 ///
 /// **Note**: For just delaying, using [`arduino_leonardo::delay_ms()`][delay_ms] or
@@ -79,6 +77,9 @@ pub fn delay_us(us: u16) {
 
     Delay::new().delay_us(us)
 }
+
+
+/*
 
 /// Support for the Serial Peripheral Interface
 ///

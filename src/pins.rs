@@ -41,7 +41,7 @@ avr_hal_generic::impl_board_pins! {
         pub rxd: portd::pd0::PD0,
         pub txd: portd::pd1::PD1,
 
-        /// i2c eprom?
+        /// i2c eeprom?
         pub sclk: portc::pc4::PC4,
         pub sda: portc::pc5::PC5,
     }
