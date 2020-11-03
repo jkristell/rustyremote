@@ -36,6 +36,8 @@ avr_hal_generic::impl_board_pins! {
         pub col3: portc::pc2::PC2,
         pub col4: portc::pc3::PC3,
         pub col5: porte::pe0::PE0,
+        pub col6: porte::pe1::PE1,
+        pub col7: porte::pe2::PE2,
 
         /// Serial
         pub rxd: portd::pd0::PD0,

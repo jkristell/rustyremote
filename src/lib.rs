@@ -47,12 +47,12 @@ pub use atmega328p_hal::pac;
 #[cfg(feature = "rt")]
 pub use hal::entry;
 
-pub use crate::pins::*;
 pub use crate::pac::Peripherals;
+pub use crate::pins::*;
 pub use hal::prelude;
 
+pub mod keypad;
 mod pins;
-pub mod keyboard;
 
 /// Busy-Delay
 ///
@@ -77,7 +77,6 @@ pub fn delay_us(us: u16) {
 
     Delay::new().delay_us(us)
 }
-
 
 /*
 
