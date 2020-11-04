@@ -19,7 +19,7 @@ avr_hal_generic::impl_board_pins! {
         /// Infrared out - Timer1
         pub irout: portb::pb1::PB1,
 
-        /// Red led
+        /// Front panel led
         pub led: porte::pe3::PE3,
 
         // Matrix
