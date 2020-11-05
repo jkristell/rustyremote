@@ -33,12 +33,12 @@ Uses the [avr-device][AvrDevice] and [avr-hal][AvrHal] crates by [Rahix] and oth
 ## Hardware
 ![Picture of the KontroLIR Remote control](https://wiki.analysir.com/images/thumb/0/0d/KontroLIR_photo1.jpg/255px-KontroLIR_photo1.jpg "KontroLIR")
 
- - Custom board from [AnalysIr] in a remote control shell
+ - Custom board from [AnalysIR] in a remote control shell
  - [Atmega328pb]
  
 ## Acknowledgements
 
-The pin map is based on the code from [AnalysIr] with the following license:
+The pin map is based on the code from [AnalysIR] with the following license:
 ```
 Author: AnalysIR
 Copyright 2019, AnalysIR
