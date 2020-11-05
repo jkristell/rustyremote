@@ -1,6 +1,6 @@
 # Board Support for the Kontrolir Remote control
 
-This is a WIP crate for supporting the [AnalysIR] remote control [KontrolIr].
+This is a WIP crate for supporting the [AnalysIR] remote control [KontrolIr]. You can find the remote and other great products at their [shop][AnalysIrShop]!
 
 The plan is to use the [Infrared] crate to enable fun Rust projects with a real remote control.
 
@@ -56,6 +56,7 @@ Notice: This  header must be placed at the top of every file (Including derivati
 
 [AnalysIr]: https://www.analysir.com/blog/
 [KontrolIr]: https://wiki.analysir.com/index.php?title=KontroLIR_-_Arduino_compatible_IR_remote_control
+[AnalysIrShop]: https://www.analysir.com/blog/shop/
 [Atmega328pb]: https://www.microchip.com/wwwproducts/en/atmega328pb
 [AvrHal]: https://github.com/Rahix/avr-hal/
 [AvrDevice]: https://github.com/Rahix/avr-device/
