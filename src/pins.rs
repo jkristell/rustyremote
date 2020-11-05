@@ -1,6 +1,6 @@
 use hal::port::PortExt;
 
-avr_hal_generic::impl_board_pins! {
+crate::avr_hal_generic::impl_board_pins! {
     #[port_defs]
     use hal::port;
 

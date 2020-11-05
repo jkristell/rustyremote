@@ -44,6 +44,8 @@
 pub extern crate atmega328p_hal as hal;
 pub use atmega328p_hal::pac;
 
+pub use hal::avr_hal_generic;
+
 #[cfg(feature = "rt")]
 pub use hal::entry;
 
