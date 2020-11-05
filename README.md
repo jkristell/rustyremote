@@ -1,6 +1,6 @@
-# Board Support for the Kontrolir Remote control
+# Board Support for the KontroLIR Remote control
 
-This is a WIP crate for supporting the [AnalysIR] remote control [KontrolIr]. You can find the remote and other great products at their [shop][AnalysIrShop]!
+This is a WIP crate for supporting the [AnalysIR] remote control [KontroLIR]. You can find the remote and other great products at their [shop][AnalysIrShop]!
 
 The plan is to use the [Infrared] crate to enable fun Rust projects with a real remote control.
 
@@ -31,12 +31,12 @@ Uses the [avr-device][AvrDevice] and [avr-hal][AvrHal] crates by [Rahix] and oth
 - `picocom -b 57600 /dev/ttyUSB0`
 
 ## Hardware
-![Picture of the KontrolIr Remote control](https://wiki.analysir.com/images/thumb/0/0d/KontroLIR_photo1.jpg/255px-KontroLIR_photo1.jpg "KontrolIr")
+![Picture of the KontroLIR Remote control](https://wiki.analysir.com/images/thumb/0/0d/KontroLIR_photo1.jpg/255px-KontroLIR_photo1.jpg "KontroLIR")
 
  - Custom board from [AnalysIr] in a remote control shell
  - [Atmega328pb]
  
-## Acknowledge
+## Acknowledgements
 
 The pin map is based on the code from [AnalysIr] with the following license:
 ```
@@ -54,8 +54,8 @@ Notice: This  header must be placed at the top of every file (Including derivati
 ```
 
 
-[AnalysIr]: https://www.analysir.com/blog/
-[KontrolIr]: https://wiki.analysir.com/index.php?title=KontroLIR_-_Arduino_compatible_IR_remote_control
+[AnalysIR]: https://www.analysir.com/blog/
+[KontroLIR]: https://wiki.analysir.com/index.php?title=KontroLIR_-_Arduino_compatible_IR_remote_control
 [AnalysIrShop]: https://www.analysir.com/blog/shop/
 [Atmega328pb]: https://www.microchip.com/wwwproducts/en/atmega328pb
 [AvrHal]: https://github.com/Rahix/avr-hal/
