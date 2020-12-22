@@ -24,7 +24,7 @@
   },
 
   "singlethread": false,
-  "no-builtins": false,
+  "no-builtins": true,
 
   "no-default-libraries": false,
 

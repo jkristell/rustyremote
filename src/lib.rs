@@ -1,9 +1,8 @@
 #![no_std]
+#![feature(const_checked_int_methods)]
 
 pub extern crate atmega328p_hal as hal;
 pub use atmega328p_hal::pac;
-
-pub use hal::avr_hal_generic;
 
 #[cfg(feature = "rt")]
 pub use hal::entry;
@@ -14,6 +13,8 @@ pub use hal::prelude;
 
 pub mod keypad;
 mod pins;
+
+pub mod timer;
 
 /// Busy-Delay
 ///

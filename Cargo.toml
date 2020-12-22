@@ -9,9 +9,19 @@ default = ["rt"]
 rt = ["atmega328p-hal/rt"]
 
 [dependencies]
-atmega328p-hal = { git = "https://github.com/jkristell/avr-hal.git", branch = "reexport-generic-hal", features = ["atmega328pb"] }
+# atmega328p-hal = { git = "https://github.com/jkristell/avr-hal.git", branch = "reexport-generic-hal", features = ["atmega328pb"] }
 ufmt = "0.1.0"
 infrared ="0.7.0"
+avr-device = { version = "0.2.3" }
+
+[dependencies.atmega328p-hal]
+git = "https://github.com/Rahix/avr-hal.git"
+rev = "9f9d6972e4ac7c149e2644bbc52c47cca81838f4"
+features = ["atmega328pb"]
+
+[dependencies.avr-hal-generic]
+git = "https://github.com/Rahix/avr-hal.git"
+rev = "9f9d6972e4ac7c149e2644bbc52c47cca81838f4"
 
 [dev-dependencies]
 panic-halt = "0.2.0"

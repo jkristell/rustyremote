@@ -1,6 +1,6 @@
 use hal::port::PortExt;
 
-crate::avr_hal_generic::impl_board_pins! {
+avr_hal_generic::impl_board_pins! {
     #[port_defs]
     use hal::port;
 
@@ -31,12 +31,20 @@ crate::avr_hal_generic::impl_board_pins! {
         pub row6: portd::pd6::PD6,
         pub row7: portd::pd7::PD7,
 
+        /// Keyboard matrox column 1 (PCINT8)
         pub col1: portc::pc0::PC0,
+        /// PCINT 9
         pub col2: portc::pc1::PC1,
+        /// PCINT 10
         pub col3: portc::pc2::PC2,
+        /// PCINT 11
         pub col4: portc::pc3::PC3,
+
+        /// PCINT24
         pub col5: porte::pe0::PE0,
+        /// PCINT25
         pub col6: porte::pe1::PE1,
+        /// PCINT26
         pub col7: porte::pe2::PE2,
 
         /// Serial
